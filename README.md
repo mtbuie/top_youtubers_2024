@@ -12,7 +12,7 @@
 - [Data Cleaning](data-cleaning)
 
 
-#Objective
+# Objective
 
 -Goal
 The business is interested in a marketing collaboration with popular youtubers. They want to know which ones would be ideal partners for the marketing promotion.
@@ -25,7 +25,7 @@ The main stats included will be:
 -Videos Count
 -Subscriber Engagement
 
-#Data Source
+# Data Source
 The data is sourced publicly from Kaggle. 
 What I used is a list of the [Top 100 Youtubers](https://www.kaggle.com/datasets/ytrank/top-100-youtube-channels-updated-weekly) that is updated monthly.
 
