@@ -88,5 +88,5 @@ FROM view_top_youtubers_2024
 
 ---
 
-![Row count test}(assets/images/row_count_test.PNG)
+![Row count test](assets/images/row_count_test.PNG)
 
