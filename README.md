@@ -48,7 +48,7 @@ The software used for this project.
 Will extract and change data by putting them into a view.
 
 ## Create View
----SQL
+---sql
 
 /*
 
@@ -70,7 +70,6 @@ SELECT
 	ISNULL (category, 'Other') AS category,
 	ISNULL (country, 'N/A') AS country
 FROM top_youtubers_2024;
-
 ---
 
 # Data Testing
@@ -79,13 +78,12 @@ Perform basic quality and validation checks.
 
 ## Row Count
 
----SQL
+---sql
 
 --1. Row count check
 
 SELECT COUNT(*) AS row_count
 FROM view_top_youtubers_2024
-
 ---
 
 ![Row count test](assets/images/row_count_test.PNG)
