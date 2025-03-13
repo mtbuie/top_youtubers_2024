@@ -31,6 +31,7 @@ What I used is a list of the [Top 100 Youtubers](https://www.kaggle.com/datasets
 
 # Tools
 The software used for this project.
+
 | Tool | Use |
 | --- | --- |
 | SQL Server | For cleaning and testing the data |
