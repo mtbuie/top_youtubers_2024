@@ -88,3 +88,53 @@ FROM view_top_youtubers_2024
 
 ![Row count test](assets/images/row_count_test.PNG)
 
+## Column Count
+
+```sql
+
+--2. Column count test
+
+SELECT 
+		COUNT(*) AS colmun_count 
+FROM 
+	INFORMATION_SCHEMA.COLUMNS
+WHERE 
+	TABLE_NAME = 'view_top_youtubers_2024'
+
+```
+
+![Column count test](assets/images/column_count_test.PNG)
+
+## Data type test
+
+```sql
+
+--3 Data type test
+
+SELECT 
+	COLUMN_NAME,
+	DATA_TYPE
+FROM 
+	INFORMATION_SCHEMA.COLUMNS
+WHERE 
+	TABLE_NAME = 'view_top_youtubers_2024'
+	
+```
+
+![Data type test](assets/images/data_type_test.PNG)	
+
+## Duplicate test
+
+```sql
+
+--4. Duplicate check
+
+SELECT channel_name,
+		COUNT(*) AS duplicate_count
+FROM view_top_youtubers_2024
+GROUP BY channel_name
+HAVING	COUNT(*) > 1
+
+```
+
+![Duplicate test](assets/images/duplicate_test.PNG)
