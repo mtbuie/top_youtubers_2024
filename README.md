@@ -7,9 +7,10 @@
 - [Objective](#objective)
 - [Data Source](#data-source)
 - [Tools](#tools)
-- [Design](#design)
 - [Data Exploration](#data-exploration)
-- [Data Cleaning](data-cleaning)
+- [Data Cleaning](#data-cleaning)
+- [Data Testing](#data-testing)
+- [Visualization](#visualization)
 
 
 # Objective
