@@ -254,7 +254,7 @@ Net Profit = Revenue - Campaign Cost
 ## Most Subscribers
 
 | Channel Name | Total Subscribers | Average Views per Video | Potential Sales | Potential Revenue | Net Profit
-| --- | --- |
+| --- | --- | --- | --- | --- | --- |
 | MrBeast |  319,000,000 |  73,800,000 |  1,476,000 |  7,380,000 |  7,330,000 
 | T-Series |  275,000,000 |  12,330,000 |  246,600 |  1,233,000 |  1,183,000 
 | Cocomelon - Nursery Rhymes |  183,000,000 |  147,080,000 |  2,941,600 |  14,708,000 |  14,658,000 
