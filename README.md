@@ -139,3 +139,96 @@ HAVING	COUNT(*) > 1
 ```
 
 ![Duplicate test](assets/images/duplicate_test.PNG)
+
+# Visualization 
+
+Next is to load the created view into Power BI and create our dashboard. 
+
+## Dax Measures
+
+We will create formulas so we can display the values. Some will be configured to show per each million.
+
+### Avergage Views per Video
+
+```sql
+
+Average Views per Video = 
+VAR million = 1000000
+VAR sumofTotalViews = SUM(view_top_youtubers_2024[total_views])
+VAR totalVideos = SUM(view_top_youtubers_2024[total_videos])
+VAR AverageViews = DIVIDE(DIVIDE(sumofTotalViews, totalVideos), million, BLANK())
+
+RETURN AverageViews
+
+```
+
+### Total Subscribers
+
+```sql
+
+Total Subscribers (M) = 
+VAR million = 1000000
+VAR sumofSubscribers = SUM(view_top_youtubers_2024[total_subscribers])
+VAR totalSubscribers = DIVIDE(sumofSubscribers, million)
+
+RETURN totalSubscribers
+
+```
+### Total Videos
+
+```sql
+
+Total Videos = 
+VAR totalVideos = SUM(view_top_youtubers_2024[total_videos])
+
+RETURN totalVideos
+
+```
+
+### Total Views
+
+```sql
+
+Total Views (B) = 
+VAR billion = 1000000000
+VAR sumofTotalViews = SUM(view_top_youtubers_2024[total_views])
+VAR totalViews = DIVIDE(sumofTotalViews, billion)
+
+RETURN totalViews
+
+```
+
+### Views per Subscribers
+
+```sql
+
+Views per Subscriber = 
+VAR sumofTotalViews = SUM(view_top_youtubers_2024[total_views])
+VAR sumofTotalSubscribers = SUM(view_top_youtubers_2024[total_subscribers])
+VAR viewsPerSubscriber = DIVIDE(sumofTotalViews, sumofTotalSubscribers, BLANK())
+
+RETURN viewsPerSubscriber
+
+```
+
+### Subscriber Engagement Rate
+
+This is a made up formula for the sake of testing.
+
+```sql
+
+Subscriber Engagement Rate = 
+VAR sumofTotalSubscribers = SUM(view_top_youtubers_2024[total_subscribers])
+VAR sumofTotalVideos = SUM(view_top_youtubers_2024[total_videos])
+VAR subscriberEngRate = DIVIDE(sumofTotalSubscribers, sumofTotalVideos, BLANK())
+
+RETURN subscriberEngRate
+
+```
+
+## Completed Visual 
+
+![top_youtubers_dashboard](assets/images/top_youtubers_dashboard.gif)
+
+![Interactive Visual](<iframe title="Top 100 Youtubers Dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZjE4NjFhNWMtZGViOS00MjYzLWE2MzMtZTBmNGU0OTZlYTkwIiwidCI6IjRiZjk1MzI5LTBiMzAtNGY5Yi1iMmUxLWFmNjgyYWVhZDViYyIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>)
+
