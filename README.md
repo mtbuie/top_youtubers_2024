@@ -230,5 +230,4 @@ RETURN subscriberEngRate
 
 ![top_youtubers_dashboard](assets/images/top_youtubers_dashboard.gif)
 
-![Interactive Visual](<iframe title="Top 100 Youtubers Dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZjE4NjFhNWMtZGViOS00MjYzLWE2MzMtZTBmNGU0OTZlYTkwIiwidCI6IjRiZjk1MzI5LTBiMzAtNGY5Yi1iMmUxLWFmNjgyYWVhZDViYyIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe>)
-
+![Interactive Visual](https://app.powerbi.com/view?r=eyJrIjoiZjE4NjFhNWMtZGViOS00MjYzLWE2MzMtZTBmNGU0OTZlYTkwIiwidCI6IjRiZjk1MzI5LTBiMzAtNGY5Yi1iMmUxLWFmNjgyYWVhZDViYyIsImMiOjJ9)
