@@ -232,3 +232,38 @@ RETURN subscriberEngRate
 ![top_youtubers_dashboard](assets/images/top_youtubers_dashboard.gif)
 
 [Interactive Visual](https://app.powerbi.com/view?r=eyJrIjoiZjE4NjFhNWMtZGViOS00MjYzLWE2MzMtZTBmNGU0OTZlYTkwIiwidCI6IjRiZjk1MzI5LTBiMzAtNGY5Yi1iMmUxLWFmNjgyYWVhZDViYyIsImMiOjJ9)
+
+# Findings
+
+We are going to examine the top 3 from the following metrics:
+1. Most Subscribers
+2. Most Views
+Using Excel, we will calculate how much revenue could be made by colloborating with these creators. 
+
+## Formulas
+Conversation Rate - 2$ - Assuming 2 percent of views purchase the advertised product.
+Product Cost - $5 - Price to purchase
+Campaign Cost - $50,000 - How much we will pay collaborators.
+
+Product Sales = AverageViews x Conversion Rate
+Revenue per Video = Product Sales x Product Cost
+Net Profit = Revenue - Campaign Cost
+
+
+
+## Most Subscribers
+
+| Channel Name | Total Subscribers | Average Views per Video | Potential Sales | Potential Revenue | Net Profit
+| --- | --- |
+| MrBeast |  319,000,000 |  73,800,000 |  1,476,000 |  7,380,000 |  7,330,000 
+| T-Series |  275,000,000 |  12,330,000 |  246,600 |  1,233,000 |  1,183,000 
+| Cocomelon - Nursery Rhymes |  183,000,000 |  147,080,000 |  2,941,600 |  14,708,000 |  14,658,000 
+
+## Most Views
+
+| Channel Name | Total Videos |
+| --- | --- |
+| T-Series |  269,120,000,000 |
+| Cocomelon - Nursery Rhymes |  190,460,000,000 |
+| SET India |  170,550,000,000 |
+
