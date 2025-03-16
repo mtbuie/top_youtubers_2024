@@ -11,20 +11,26 @@
 - [Data Cleaning](#data-cleaning)
 - [Data Testing](#data-testing)
 - [Visualization](#visualization)
+- [Analysis](#analysis)
 
 
 # Objective
 
 -Goal
-The business is interested in a marketing collaboration with popular youtubers. They want to know which ones would be ideal partners for the marketing promotion.
+The business is interested in a marketing collaboration with popular youtubers. They want to know which ones would be ideal partners for the marketing promotion to sell a product. 
 
 -Plan
 To design and create an analytics dashboard that will display data on popular youtubers. 
 The main stats included will be:
 -Subscribers
+
 -Views
+
 -Videos Count
+
 -Subscriber Engagement
+
+We believe that channels with high view counts will correlate with producing high profits.
 
 # Data Source
 The data is sourced publicly from Kaggle. 
@@ -233,7 +239,7 @@ RETURN subscriberEngRate
 
 [Interactive Visual](https://app.powerbi.com/view?r=eyJrIjoiZjE4NjFhNWMtZGViOS00MjYzLWE2MzMtZTBmNGU0OTZlYTkwIiwidCI6IjRiZjk1MzI5LTBiMzAtNGY5Yi1iMmUxLWFmNjgyYWVhZDViYyIsImMiOjJ9)
 
-# Findings
+# Analysis
 
 We are going to examine the top 3 from the following metrics:
 1. Most Subscribers
@@ -259,11 +265,22 @@ Net Profit = Revenue - Campaign Cost
 | T-Series |  275,000,000 |  12,330,000 |  246,600 |  1,233,000 |  1,183,000 
 | Cocomelon - Nursery Rhymes |  183,000,000 |  147,080,000 |  2,941,600 |  14,708,000 |  14,658,000 
 
+![Most Subscribers](assets/images/most_subscribers.png)
+
+All three channels have a good average number of views. Despite having significantly less subscribers, Cocomelon has twice the average views of MrBeast over 10 times that of T-Series. Each channel could potentially make a large profit in the millions given their viewership. Cocomelon reaches as high as $14 million and could be considered for a larger collaboration.
+
 ## Most Views
 
-| Channel Name | Total Videos |
+| Channel Name | Most Views | Average Views per Video | Potential Sales | Potential Revenue | Net Profit
 | --- | --- |
-| T-Series |  269,120,000,000 |
-| Cocomelon - Nursery Rhymes |  190,460,000,000 |
-| SET India |  170,550,000,000 |
+| T-Series |  269,120,000,000 |  12,330,000 |  246,600 |  1,233,000 | 1,183,000
+| Cocomelon - Nursery Rhymes |  190,460,000,000 |  147,080,000 |  2,941,600 |  14,708,000 | 14,658,000
+| SET India |  170,550,000,000 | 1,170,000 |  23,400 |  117,000 | 67,000
 
+![Most Views](assets/images/most_views.png)
+
+The top 3 channels have total views in the hundred millions. T-Series and Cocomelon appear again with a high number of average views. Set India makes a profit if worked,, but a smaller promotion might to more revenue.
+
+# Findings
+
+Channels with a high number of average views per video are more likely to produce a profit. Cocomelon shows to have the highest potential profits if a collaboration is formed. MrBeast is on the the high end with T-Series and Set India being on the middle to low ends. Cocomelon's potential is high enough that an even larger promotion could be considered. Smaller promotions should be researched for channels with lower average views. 
